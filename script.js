@@ -12,6 +12,8 @@ fetch("https://randomuser.me/api/?results=5").then((data)=>{
     });
     document.getElementById("table_body").
     innerHTML=tableData;
+}).catch((err)=>{
+    console.log(err)
 });
 //Get name.first
 //Get location.city
